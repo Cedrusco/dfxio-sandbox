@@ -1,24 +1,24 @@
 (function (angular) {
   'use strict'
 
-  function TestComponentController(){
-    this.data = 'cmonnn';
-  }
+  // function TestComponentController(){
+  //   this.message = 'cmonnn TestComponentController';
+  // }
 
   var TestComponent = {
     bindings: {
-      data: '='
+      message: '='
     },
-    controller: TestComponentController,
-    controllerAs: '$ctrl',
-    template: '<h1>TestComponent template {{$ctrl.data}}</h1>'
+    // controller: TestComponentController,
+    // controllerAs: '$ctrl',
+    template: '<h1>TestComponent template {{$ctrl.message}}</h1>'
   };
 
 
   angular
     .module('dfxio', [])
     .controller('dfxioController', function ($scope) {
-
+      $scope.message = "Message from dfxio controller";
     })
     .directive('dfxioDirective', function () {
       return {
