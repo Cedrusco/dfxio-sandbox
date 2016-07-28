@@ -1,23 +1,31 @@
 (function (angular) {
   'use strict'
 
-  var TestComponent = {
-    bindings: {
-      message: '='
-    },
-    template: '<h1>TestComponent template {{$ctrl.message}}</h1>'
-  };
+  var dfxio = function() {
+    return {
+      bindings: {
+        component: '@'
+      },
+      templateUrl: function(elem, attr) {
+        return attr.component + '/' + attr.component + '.html';
+      }
+      // controller: ['$scope', function ($scope) {
+      //   $scope.hello = function () {
+      //     alert('hello world');
+      //   }
+      // }]
+    };
+  }
 
   angular
-    .module('TestComponentModule', [])
-    .controller('TestComponentController', function ($scope) {
-
+    .module('dfxioModule', [])
+    .controller('dfxioController', function ($scope) {
     })
-    .component('testComponent', TestComponent);
+    .directive('dfxio', dfxio);
 
   var appName = $('[ng-app]').attr('ng-app');
-  
+
   angular
     .module(appName)
-    .requires.push('TestComponentModule');
+    .requires.push('dfxioModule');
 })(angular)
