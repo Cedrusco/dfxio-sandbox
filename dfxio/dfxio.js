@@ -1,5 +1,5 @@
 (function (angular) {
-  'use strict'
+  'use strict';
 
   var dfxio = function() {
     return {
@@ -9,13 +9,8 @@
       templateUrl: function(elem, attr) {
         return attr.component + '/' + attr.component + '.html';
       }
-      // controller: ['$scope', function ($scope) {
-      //   $scope.hello = function () {
-      //     alert('hello world');
-      //   }
-      // }]
     };
-  }
+  };
 
   angular
     .module('dfxioModule', [])
@@ -23,9 +18,8 @@
     })
     .directive('dfxio', dfxio);
 
-  var appName = $('[ng-app]').attr('ng-app');
-
-  angular
-    .module(appName)
-    .requires.push('dfxioModule');
-})(angular)
+  //var appName = $('[ng-app]').attr('ng-app'); 
+  //angular
+    //.module(appName)
+    //.requires.push('dfxioModule');
+})(angular);

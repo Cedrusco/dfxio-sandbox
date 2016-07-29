@@ -6,4 +6,5 @@ angular
     }
   });
 
-// angular.module('Meaniscule').requires.push('HelloWorldModule');
+console.log('loaded');
+//angular.module('Meaniscule').requires.push('HelloWorldModule');
