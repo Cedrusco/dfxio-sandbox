@@ -2,9 +2,18 @@
 
 (function (angular) {
   'use strict';
+  var resume;
+  var count = 0;
 
-  function resume() {
-    angular.resumeBootstrap(['dfxioModule', 'HelloWorldModule']);  
+  function makeResume(numOfModules) {
+    function resume(modulesLoaded) {
+      //there should be a way to dynamically add the modules to this array
+      if(modulesLoaded === numOfModules) {
+        angular.resumeBootstrap(['dfxioModule', 'HelloWorldModule', 'HelloAdeleModule']);
+      }  
+    }
+
+    return resume;
   }
 
   function loadNewScript(source) {
@@ -14,7 +23,8 @@
     s.src = source;
 
     s.onload = function helper() {
-        resume()
+        count++
+        resume(count)
         console.log('script has loaded')
     }; 
     
@@ -27,6 +37,7 @@
 
   //load components in array
     $.get('/components.json').success(function(data) {
+      resume = makeResume(data.length);
       data.forEach(function(script) {
         loadNewScript(script)
     })
