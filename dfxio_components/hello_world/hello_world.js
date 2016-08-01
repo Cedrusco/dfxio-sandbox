@@ -4,8 +4,12 @@ angular
     $scope.hello = function () {
       alert('hello world');
     }
+
   });
 
-console.log('loaded');
-dfxio();
+function isLoaded() {
+	console.log('loaded');
+}
+
+// dfxio();
 //angular.module('Meaniscule').requires.push('HelloWorldModule');
