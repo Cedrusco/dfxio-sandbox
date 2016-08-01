@@ -7,8 +7,8 @@ var head = document.getElementsByTagName('head')[0];
   head.appendChild(s);
 
 // FIX: need more specific event listener
-document.addEventListener("DOMContentLoaded", function(event) {
-  angular.resumeBootstrap(['dfxioModule', 'HelloWorldModule']);  
-});
+//document.addEventListener("DOMContentLoaded", function(event) {
+  //angular.resumeBootstrap(['dfxioModule', 'HelloWorldModule']);  
+//});
 
   //angular.module('Meaniscule').requires.push('HelloWorldModule');

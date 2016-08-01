@@ -7,4 +7,5 @@ angular
   });
 
 console.log('loaded');
+dfxio();
 //angular.module('Meaniscule').requires.push('HelloWorldModule');
