@@ -1,11 +1,11 @@
 angular
   .module('HelloWorldModule', [])
-  .controller('HelloWorldController', function ($scope) {
-    $scope.hello = function () {
-      alert('hello world');
-    }
-
-  });
+  .controller( "HelloWorldController", ['$scope', 'dfxDialog', function ( $scope, dfxDialog ) {
+  	$scope.menu_state = true;
+    	$scope.hello = function() {
+      	dfxDialog.showMessage( 'Hello World!' );
+      };
+  }]);
 
 function isLoaded() {
 	console.log('loaded');

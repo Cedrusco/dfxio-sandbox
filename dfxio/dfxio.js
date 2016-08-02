@@ -1,5 +1,3 @@
-
-
 (function (angular) {
   'use strict';
   var resume;
@@ -10,7 +8,7 @@
       //there should be a way to dynamically add the modules to this array
       if(modulesLoaded === numOfModules) {
         angular.resumeBootstrap(['dfxioModule', 'HelloWorldModule', 'HelloAdeleModule']);
-      }  
+      }
     }
 
     return resume;
@@ -26,8 +24,8 @@
         count++
         resume(count)
         console.log('script has loaded')
-    }; 
-    
+    };
+
     // async false may be required!
     //s.async = false;
     head.appendChild(s);
@@ -60,7 +58,7 @@
     })
     .directive('dfxio', dfxio);
 
-  //var appName = $('[ng-app]').attr('ng-app'); 
+  //var appName = $('[ng-app]').attr('ng-app');
   //angular
     //.module(appName)
     //.requires.push('dfxioModule');
