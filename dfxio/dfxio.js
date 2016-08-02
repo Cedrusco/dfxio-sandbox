@@ -1,15 +1,23 @@
-
-
 (function (angular) {
   'use strict';
   var resume;
   var count = 0;
+  var modules = [];
+  var angularModule = angular.module.bind(angular);
+  angular.module = function(moduleName, moduleDependencies) {
+    modules.push(moduleName);
+    return angularModule(moduleName, moduleDependencies);
+  };
 
   function makeResume(numOfModules) {
-    function resume(modulesLoaded) {
-      //there should be a way to dynamically add the modules to this array
+    function resume(modulesLoaded, modules) {
       if(modulesLoaded === numOfModules) {
-        angular.resumeBootstrap(['dfxioModule', 'HelloWorldModule', 'HelloAdeleModule']);
+        // Filter out the main app to avoid side effects
+        var mainApp = $('[ng-app]').attr('ng-app');
+        modules = modules.filter(function(val) {
+          return val !== mainApp; 
+        });
+        angular.resumeBootstrap(modules);
       }  
     }
 
@@ -24,7 +32,7 @@
 
     s.onload = function helper() {
         count++
-        resume(count)
+        resume(count, modules)
         console.log('script has loaded')
     }; 
     
