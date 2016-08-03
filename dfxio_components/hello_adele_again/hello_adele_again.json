@@ -1,0 +1,606 @@
+{
+	"properties": {},
+	"definition": {
+		"default": [
+			{
+				"id": 989,
+				"type": "panel",
+				"attributes": {
+					"name": {
+						"value": "pnlPanel1",
+						"status": "overridden"
+					},
+					"layout": {
+						"rows": [
+							{
+								"cols": [
+									{
+										"width": {
+											"value": "100"
+										},
+										"autoWidth": {
+											"value": false
+										},
+										"display": {
+											"value": "true"
+										},
+										"classes": {
+											"value": ""
+										},
+										"dynamicClasses": {
+											"value": ""
+										},
+										"style": {
+											"value": ""
+										},
+										"orientation": {
+											"value": "row"
+										},
+										"halignment": {
+											"value": "start"
+										},
+										"valignment": {
+											"value": "start"
+										}
+									},
+									{
+										"width": {
+											"value": 25
+										},
+										"autoWidth": {
+											"value": false
+										},
+										"display": {
+											"value": "true"
+										},
+										"classes": {
+											"value": ""
+										},
+										"dynamicClasses": {
+											"value": ""
+										},
+										"style": {
+											"value": ""
+										},
+										"orientation": {
+											"value": "row"
+										},
+										"halignment": {
+											"value": "start"
+										},
+										"valignment": {
+											"value": "start"
+										},
+										"css": {
+											"color": "",
+											"background": "",
+											"padding": "",
+											"text-align": ""
+										}
+									}
+								],
+								"classes": {
+									"value": ""
+								},
+								"dynamicClasses": {
+									"value": ""
+								},
+								"style": {
+									"value": ""
+								}
+							},
+							{
+								"cols": [
+									{
+										"width": {
+											"value": 100
+										},
+										"autoWidth": {
+											"value": false
+										},
+										"display": {
+											"value": "true"
+										},
+										"classes": {
+											"value": ""
+										},
+										"dynamicClasses": {
+											"value": ""
+										},
+										"style": {
+											"value": ""
+										},
+										"orientation": {
+											"value": "row"
+										},
+										"halignment": {
+											"value": "start"
+										},
+										"valignment": {
+											"value": "start"
+										},
+										"css": {
+											"color": "",
+											"background": "",
+											"padding": "",
+											"text-align": ""
+										}
+									}
+								],
+								"classes": {
+									"value": ""
+								},
+								"dynamicClasses": {
+									"value": ""
+								},
+								"style": {
+									"value": ""
+								}
+							}
+						],
+						"status": "overridden"
+					}
+				},
+				"children": [
+					{
+						"id": 2334,
+						"type": "image",
+						"flex": "false",
+						"attributes": {
+							"name": {
+								"value": "imgImage1",
+								"status": "overridden"
+							},
+							"src": {
+								"value": "'http://cdn03.cdn.justjared.com/wp-content/uploads/headlines/2015/10/adele-hello-video.jpg'",
+								"status": "overridden"
+							}
+						},
+						"children": [],
+						"container": "layout_0_row_0_column_0"
+					},
+					{
+						"id": 91330,
+						"type": "html",
+						"flex": "true",
+						"attributes": {
+							"name": {
+								"value": "htHtml1",
+								"status": "overridden"
+							},
+							"flex": {
+								"value": 100,
+								"status": "overridden"
+							},
+							"content": {
+								"value": "",
+								"status": "overridden"
+							}
+						},
+						"children": [],
+						"container": "layout_0_row_0_column_0"
+					},
+					{
+						"id": 91095,
+						"type": "button",
+						"flex": "false",
+						"attributes": {
+							"name": {
+								"value": "btnButton1",
+								"status": "overridden"
+							},
+							"label": {
+								"value": "'hello'",
+								"status": "overridden"
+							},
+							"menuItems": {
+								"value": [],
+								"status": "overridden"
+							}
+						},
+						"children": [],
+						"container": "layout_0_row_0_column_0"
+					},
+					{
+						"id": 69197,
+						"type": "datatable",
+						"flex": "true",
+						"attributes": {
+							"name": {
+								"value": "dtblDatatable1",
+								"status": "overridden"
+							},
+							"title": {
+								"value": "'Hello'",
+								"status": "overridden"
+							},
+							"binding": {
+								"value": "results",
+								"status": "overridden"
+							},
+							"bindingClone": {
+								"value": [],
+								"status": "overridden"
+							},
+							"checkOption": {
+								"value": "single",
+								"status": "overridden"
+							},
+							"columns": {
+								"value": [
+									{
+										"header": "'Column1'",
+										"value": "",
+										"name": "column1",
+										"flex": 25,
+										"columnId": "1",
+										"renderer": {
+											"name": "statictext",
+											"attributes": {
+												"template": {
+													"value": "default",
+													"status": "overridden"
+												},
+												"name": {
+													"value": "txtText1",
+													"status": "overridden"
+												},
+												"text": {
+													"value": "$dfx_item.rel",
+													"status": "overridden"
+												},
+												"display": {
+													"value": "true",
+													"status": "overridden"
+												},
+												"classes": {
+													"value": "",
+													"status": "overridden"
+												},
+												"dynamicClasses": {
+													"value": "",
+													"status": "overridden"
+												},
+												"style": {
+													"value": "",
+													"status": "overridden"
+												},
+												"tooltipProperties": {
+													"toolTipText": "",
+													"direction": "bottom",
+													"status": "overridden"
+												},
+												"onclick": {
+													"value": "",
+													"status": "overridden"
+												},
+												"ondblclick": {
+													"value": "",
+													"status": "overridden"
+												},
+												"onkeypress": {
+													"value": "",
+													"status": "overridden"
+												},
+												"onkeydown": {
+													"value": "",
+													"status": "overridden"
+												},
+												"onkeyup": {
+													"value": "",
+													"status": "overridden"
+												},
+												"onmouseover": {
+													"value": "",
+													"status": "overridden"
+												},
+												"onmouseenter": {
+													"value": "",
+													"status": "overridden"
+												},
+												"onmousemove": {
+													"value": "",
+													"status": "overridden"
+												},
+												"onmouseleave": {
+													"value": "",
+													"status": "overridden"
+												},
+												"onmouseup": {
+													"value": "",
+													"status": "overridden"
+												}
+											},
+											"children": []
+										},
+										"isNumeric": "false",
+										"isAscending": "false",
+										"style": "",
+										"classes": "",
+										"dynamicClasses": ""
+									},
+									{
+										"header": "'Column2'",
+										"value": "",
+										"name": "column2",
+										"flex": 25,
+										"columnId": "2",
+										"renderer": {
+											"name": "statictext",
+											"attributes": {
+												"template": {
+													"value": "default",
+													"status": "overridden"
+												},
+												"name": {
+													"value": "txtText2",
+													"status": "overridden"
+												},
+												"text": {
+													"value": "$dfx_item.href",
+													"status": "overridden"
+												},
+												"display": {
+													"value": "true",
+													"status": "overridden"
+												},
+												"classes": {
+													"value": "",
+													"status": "overridden"
+												},
+												"dynamicClasses": {
+													"value": "",
+													"status": "overridden"
+												},
+												"style": {
+													"value": "",
+													"status": "overridden"
+												},
+												"tooltipProperties": {
+													"toolTipText": "",
+													"direction": "bottom",
+													"status": "overridden"
+												},
+												"onclick": {
+													"value": "",
+													"status": "overridden"
+												},
+												"ondblclick": {
+													"value": "",
+													"status": "overridden"
+												},
+												"onkeypress": {
+													"value": "",
+													"status": "overridden"
+												},
+												"onkeydown": {
+													"value": "",
+													"status": "overridden"
+												},
+												"onkeyup": {
+													"value": "",
+													"status": "overridden"
+												},
+												"onmouseover": {
+													"value": "",
+													"status": "overridden"
+												},
+												"onmouseenter": {
+													"value": "",
+													"status": "overridden"
+												},
+												"onmousemove": {
+													"value": "",
+													"status": "overridden"
+												},
+												"onmouseleave": {
+													"value": "",
+													"status": "overridden"
+												},
+												"onmouseup": {
+													"value": "",
+													"status": "overridden"
+												}
+											},
+											"children": []
+										},
+										"isNumeric": "false",
+										"isAscending": "false",
+										"style": "",
+										"classes": "",
+										"dynamicClasses": ""
+									},
+									{
+										"header": "'Column3'",
+										"value": "",
+										"name": "column3",
+										"flex": 25,
+										"columnId": "3",
+										"renderer": {
+											"name": "statictext",
+											"attributes": {
+												"template": {
+													"value": "default",
+													"status": "overridden"
+												},
+												"name": {
+													"value": "txtText3",
+													"status": "overridden"
+												},
+												"text": {
+													"value": "$dfx_item[$dfx_column.value]",
+													"status": "overridden"
+												},
+												"display": {
+													"value": "true",
+													"status": "overridden"
+												},
+												"classes": {
+													"value": "",
+													"status": "overridden"
+												},
+												"dynamicClasses": {
+													"value": "",
+													"status": "overridden"
+												},
+												"style": {
+													"value": "",
+													"status": "overridden"
+												},
+												"tooltipProperties": {
+													"toolTipText": "",
+													"direction": "bottom",
+													"status": "overridden"
+												},
+												"onclick": {
+													"value": "",
+													"status": "overridden"
+												},
+												"ondblclick": {
+													"value": "",
+													"status": "overridden"
+												},
+												"onkeypress": {
+													"value": "",
+													"status": "overridden"
+												},
+												"onkeydown": {
+													"value": "",
+													"status": "overridden"
+												},
+												"onkeyup": {
+													"value": "",
+													"status": "overridden"
+												},
+												"onmouseover": {
+													"value": "",
+													"status": "overridden"
+												},
+												"onmouseenter": {
+													"value": "",
+													"status": "overridden"
+												},
+												"onmousemove": {
+													"value": "",
+													"status": "overridden"
+												},
+												"onmouseleave": {
+													"value": "",
+													"status": "overridden"
+												},
+												"onmouseup": {
+													"value": "",
+													"status": "overridden"
+												}
+											},
+											"children": []
+										},
+										"isNumeric": "true",
+										"isAscending": "false",
+										"style": "",
+										"classes": "",
+										"dynamicClasses": ""
+									},
+									{
+										"header": "'Column4'",
+										"value": "",
+										"name": "column4",
+										"flex": 25,
+										"columnId": "4",
+										"renderer": {
+											"name": "statictext",
+											"attributes": {
+												"template": {
+													"value": "default",
+													"status": "overridden"
+												},
+												"name": {
+													"value": "txtText4",
+													"status": "overridden"
+												},
+												"text": {
+													"value": "$dfx_item[$dfx_column.value]",
+													"status": "overridden"
+												},
+												"display": {
+													"value": "true",
+													"status": "overridden"
+												},
+												"classes": {
+													"value": "",
+													"status": "overridden"
+												},
+												"dynamicClasses": {
+													"value": "",
+													"status": "overridden"
+												},
+												"style": {
+													"value": "",
+													"status": "overridden"
+												},
+												"tooltipProperties": {
+													"toolTipText": "",
+													"direction": "bottom",
+													"status": "overridden"
+												},
+												"onclick": {
+													"value": "",
+													"status": "overridden"
+												},
+												"ondblclick": {
+													"value": "",
+													"status": "overridden"
+												},
+												"onkeypress": {
+													"value": "",
+													"status": "overridden"
+												},
+												"onkeydown": {
+													"value": "",
+													"status": "overridden"
+												},
+												"onkeyup": {
+													"value": "",
+													"status": "overridden"
+												},
+												"onmouseover": {
+													"value": "",
+													"status": "overridden"
+												},
+												"onmouseenter": {
+													"value": "",
+													"status": "overridden"
+												},
+												"onmousemove": {
+													"value": "",
+													"status": "overridden"
+												},
+												"onmouseleave": {
+													"value": "",
+													"status": "overridden"
+												},
+												"onmouseup": {
+													"value": "",
+													"status": "overridden"
+												}
+											},
+											"children": []
+										},
+										"isNumeric": "true",
+										"isAscending": "true",
+										"style": "",
+										"classes": "",
+										"dynamicClasses": ""
+									}
+								],
+								"status": "overridden"
+							}
+						},
+						"children": [],
+						"container": "layout_0_row_0_column_0"
+					}
+				]
+			}
+		]
+	}
+}

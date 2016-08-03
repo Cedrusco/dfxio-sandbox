@@ -7,10 +7,12 @@ const logger = require('morgan');
 const chalk = require('chalk');
 const bodyParser = require('body-parser');
 const fs = require('fs');
+const dfxio = require('../dfxio.js');
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(dfxio);
 
 // Static paths
 app.use(express.static(path.join(__dirname, '../client')));
