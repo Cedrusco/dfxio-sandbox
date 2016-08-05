@@ -1,3 +1,7 @@
 node_modules
 .DS_Store
 client/build
+
+*.swo
+*.swp
+*.swn

@@ -17,6 +17,7 @@ requireApp
 		}); 
 	})
 	.catch(function(err) {
+    console.log(err);
 		console.log('Problem starting up!', chalk.red(err.message));
 		console.log('I\'m out!');
 		process.kill(1);
