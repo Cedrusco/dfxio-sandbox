@@ -17,9 +17,7 @@ app.use(dfxio);
 // Static paths
 app.use(express.static(path.join(__dirname, '../client')));
 app.use(express.static(path.join(__dirname, '../client/build'))); // for gulped files
-// app.use(express.static(path.join(__dirname, '../node_modules')));
-//app.use(express.static(path.join(__dirname, '../dfxio')));
-// app.use(express.static(path.join(__dirname, '../dfxio_components')));
+app.use(express.static(path.join(__dirname, '../node_modules')));
 app.use(express.static(path.join(__dirname, './images')));
 // app.use(express.static(path.join(__dirname, '../bower_components')));
 
